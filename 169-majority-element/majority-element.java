@@ -16,7 +16,17 @@ class Solution {
             }
 
         }
-       return el;
+        int c1=0;
+        for(int j=0;j<n;j++){
+            if(nums[j]==el){
+                c1++;
+            }
+        }
+        if(c1>n/2){
+            return el;
+        }
+        return -1;
+       
         
     }
 }
